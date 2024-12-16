@@ -1,13 +1,120 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+  }
+  .container{
+    margin:1rem;
+    margin-top:5rem;
+    width: 45%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+ 
+  
+  /* To-Do List Container */
+  ul {
+    display: relative;
+    list-style-type: none;
+    padding: 0;
+    width: 300px;
+    width: 100%;
+  }
+  
+  input[type='text'] {
+    width: 88%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+ 
+  button {
+    padding: 8px 15px;
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  /* List Item Styling */
+  li {
+    background-color: #fff;
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+  
+  li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Buttons inside the List Items */
+  .toggle-btn{
+     display: inline;
+  }
+  ul button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+  }
+  
+  ul button:first-of-type {
+    background-color: #28a745; /* Green for "Complete"/"Revert" */
+    
+  }
+  
+  ul button:first-of-type:hover {
+    background-color: #218838;
+  }
+  
+  ul button:last-of-type {
+    background-color: #dc3545; /* Red for "Remove" */
+  }
+  
+  ul button:last-of-type:hover {
+    background-color: #c82333;
+  }
+  
+  /* Task Counts Styling */
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], button {
+    font-size: 1rem;
+  }
+  
+  
